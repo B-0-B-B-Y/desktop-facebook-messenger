@@ -16,7 +16,7 @@ app.on('ready', function() {
         frame: false,
         transparent: false,
         icon: path.join(__dirname, 'app/build/icon.png'),
-        alwaysOnTop: true
+        alwaysOnTop: false
     })
 
     messengerWindow.loadURL('file://' + __dirname + '/app/index.html');

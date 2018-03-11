@@ -8,6 +8,20 @@ webview.addEventListener('dom-ready', function() {
 });
 
 //Setup minimise button
+var buttonBack = document.getElementById('btn-back')
+
+buttonBack.addEventListener('click', function () {
+  webview.goBack()
+})
+
+//Setup minimise button
+var buttonForward = document.getElementById('btn-forward')
+
+buttonForward.addEventListener('click', function () {
+  webview.goForward()
+})
+
+//Setup minimise button
 var buttonHide = document.getElementById('btn-hide')
 
 buttonHide.addEventListener('click', function () {
