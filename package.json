@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "author": "Bob Naydenov <bob.naydenov@hotmail.com>",
   "description": "An elegant desktop version of Facebook's messenger.",
-  "licence": "GPL-3.0",
+  "license": "GPL-3.0",
   "keywords": [
     "desktop",
     "app",
@@ -48,7 +48,5 @@
     "electron-builder": "^19.56.2",
     "electron-prebuilt": "^1.4.13"
   },
-  "dependencies": {
-
-  }
+  "dependencies": {}
 }

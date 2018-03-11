@@ -1,6 +1,5 @@
 const electron = require('electron')
 const {app, BrowserWindow, ipcMain} = require('electron')
-const { blockWindowAds, adBlocker } = require('electron-ad-blocker')
 const path = require('path')
 const url = require('url')
 const fs = require('fs')
@@ -26,9 +25,6 @@ app.on('ready', function() {
       verbose: false,
       logger: console,
     }
-
-    blockWindowAds(messengerWindow, options);
-
 
 })
 
