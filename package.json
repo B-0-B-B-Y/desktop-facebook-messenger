@@ -1,0 +1,54 @@
+{
+  "name": "desktop-facebook-messenger",
+  "version": "1.0.0",
+  "author": "Bob Naydenov <bob.naydenov@hotmail.com>",
+  "description": "An elegant desktop version of Facebook's messenger.",
+  "licence": "GPL-3.0",
+  "keywords": [
+    "desktop",
+    "app",
+    "facebook",
+    "messenger",
+    "social",
+    "network",
+    "chat",
+    "real-time",
+    "friends",
+    "connect",
+    "message"
+  ],
+  "main": "./main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/B-0-B-B-Y/desktop-facebook-messenger.git"
+  },
+  "build": {
+    "appId": "desktop.facebook.messenger",
+    "productName": "Messenger Desktop",
+    "mac": {
+      "category": "Social Networking",
+      "icon": "app/build/icon.icns"
+    },
+    "win": {
+      "target": "NSIS",
+      "icon": "app/build/icon.ico"
+    },
+    "linux": {
+      "icon": "app/build/"
+    }
+  },
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder -mlw",
+    "dist-win": "electron-builder --win",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "devDependencies": {
+    "electron": "^1.8.3",
+    "electron-builder": "^19.56.2",
+    "electron-prebuilt": "^1.4.13",
+  },
+  "dependencies": {
+
+  }
+}
