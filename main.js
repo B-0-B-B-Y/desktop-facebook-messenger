@@ -26,6 +26,8 @@ app.on('ready', function() {
       logger: console,
     }
 
+    //messengerWindow.webContents.openDevTools()
+
 })
 
 ipcMain.on('button-press-hide', (event, arg) => {
