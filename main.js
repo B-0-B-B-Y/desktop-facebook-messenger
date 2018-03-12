@@ -8,11 +8,11 @@ let messengerWindow = null;
 
 app.on('ready', function() {
 
-  const {width, height} = electron.screen.getPrimaryDisplay().workAreaSize
+  const {width, height} = electron.screen.getPrimaryDisplay().size
 
     messengerWindow = new BrowserWindow({
-        height: height * 0.50,
-        width: width * 0.45,
+        height: height * 0.6,
+        width: width * 0.5,
         frame: false,
         transparent: false,
         icon: path.join(__dirname, 'app/build/icon.png'),
