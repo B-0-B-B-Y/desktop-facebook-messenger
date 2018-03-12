@@ -4,8 +4,11 @@ const webview = document.querySelector('webview')
 //Inject Own JS to remove some elements from messenger site taht are not needed
 webview.addEventListener('dom-ready', function() {
     webview.insertCSS("body::-webkit-scrollbar { width: 0 !important; }");
-    webview.executeJavaScript("var advertAppStores = document.getElementById('u_0_6');advertAppStores.style.display = \"none\";var irrelevantMenuItem1 = document.getElementById('u_0_b');irrelevantMenuItem1.style.display = \"none\";var irrelevantMenuItem2 = document.getElementById('u_0_c');irrelevantMenuItem2.style.display = \"none\";var irrelevantMenuItem3 = document.getElementById('u_0_d');irrelevantMenuItem3.style.display = \"none\";var irrelevantMenuItem4 = document.getElementById('u_0_9');irrelevantMenuItem4.style.display = \"none\";var irrelevantMenuItem5 = document.getElementById('u_0_8');irrelevantMenuItem5.style.display = \"none\";")
-});
+    var siteName = webview.getURL()
+    if(siteName.includes('https://www.messenger.com')) {
+      webview.executeJavaScript("var advertAppStores = document.getElementById('u_0_6');advertAppStores.style.display = \"none\";var irrelevantMenuItem1 = document.getElementById('u_0_b');irrelevantMenuItem1.style.display = \"none\";var irrelevantMenuItem2 = document.getElementById('u_0_c');irrelevantMenuItem2.style.display = \"none\";var irrelevantMenuItem3 = document.getElementById('u_0_d');irrelevantMenuItem3.style.display = \"none\";var irrelevantMenuItem4 = document.getElementById('u_0_9');irrelevantMenuItem4.style.display = \"none\";var irrelevantMenuItem5 = document.getElementById('u_0_8');irrelevantMenuItem5.style.display = \"none\";")
+    }
+})
 
 //Setup minimise button
 var buttonBack = document.getElementById('btn-back')
