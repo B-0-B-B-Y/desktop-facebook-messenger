@@ -1,5 +1,5 @@
 const electron = require('electron')
-const {app, BrowserWindow, ipcMain} = require('electron')
+const {app, BrowserWindow, ipcMain, Menu, Tray} = require('electron')
 const path = require('path')
 const url = require('url')
 const fs = require('fs')
@@ -18,6 +18,21 @@ app.on('ready', function() {
         icon: path.join(__dirname, 'app/build/icon.png'),
         alwaysOnTop: false
     })
+
+    appIcon = new Tray(path.join(__dirname, 'app/build/icon.png'))
+    const contextMenu = Menu.buildFromTemplate([
+      {label: 'Desktop Messenger', type: 'normal', enabled: 'false'},
+      {label: 'Close to Tray', type: 'normal', role: 'hide', click:  function(){
+        messengerWindow.hide()}},
+      {label: 'Show from Tray', type: 'normal', click:  function(){
+        messengerWindow.show()}},
+      {label: 'Quit', type: 'normal', role: 'quit'}
+    ])
+
+    // Call this again for Linux because we modified the context menu
+    appIcon.setContextMenu(contextMenu)
+
+
 
     messengerWindow.loadURL('file://' + __dirname + '/app/index.html');
 
