@@ -1,6 +1,6 @@
 {
   "name": "desktop-facebook-messenger",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Bob Naydenov <bob.naydenov@hotmail.com>",
   "description": "An elegant desktop version of Facebook's messenger.",
   "license": "GPL-3.0",
@@ -26,14 +26,16 @@
     "appId": "desktop.facebook.messenger",
     "productName": "Messenger Desktop",
     "mac": {
-      "category": "Social Networking",
+      "category": "Network",
       "icon": "app/build/icon.icns"
     },
     "win": {
       "target": "NSIS",
+      "category": "Network",
       "icon": "app/build/icon.ico"
     },
     "linux": {
+      "category": "Network",
       "icon": "app/build/"
     }
   },
