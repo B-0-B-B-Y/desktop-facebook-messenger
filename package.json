@@ -40,6 +40,8 @@
   "scripts": {
     "start": "electron .",
     "pack": "electron-builder -mlw",
+    "dist-lin": "electron-builder --linux",
+    "dist-mac": "electron-builder --mac",
     "dist-win": "electron-builder --win",
     "postinstall": "electron-builder install-app-deps"
   },
