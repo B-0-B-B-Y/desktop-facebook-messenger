@@ -31,11 +31,11 @@
     },
     "win": {
       "target": "NSIS",
-      "category": "Network",
       "icon": "app/build/icon.ico"
     },
     "linux": {
       "category": "Network",
+      "executableName": "Messenger Desktop",
       "icon": "app/build/"
     }
   },
