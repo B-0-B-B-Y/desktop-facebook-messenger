@@ -32,16 +32,15 @@ app.on('ready', function() {
     // Call this again for Linux because we modified the context menu
     appIcon.setContextMenu(contextMenu)
 
-
+    appIcon.on('click', function() {
+      messengerWindow.show()
+    })
 
     messengerWindow.loadURL('file://' + __dirname + '/app/index.html');
 
-    const options = {
-      verbose: false,
-      logger: console,
-    }
-
     //messengerWindow.webContents.openDevTools()
+
+
 
 })
 
