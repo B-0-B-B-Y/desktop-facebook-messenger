@@ -58,3 +58,7 @@ typings/
 .env
 
 dist/
+
+electron-builder.yml
+
+dev-app-update.yml

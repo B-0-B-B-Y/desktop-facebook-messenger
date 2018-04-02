@@ -45,6 +45,9 @@
     "dist-lin": "electron-builder --linux",
     "dist-mac": "electron-builder --mac",
     "dist-win": "electron-builder --win",
+    "ship-lin": "electron-builder --linux -p always",
+    "ship-mac": "electron-builder --mac -p always",
+    "ship-win": "electron-builder --win -p always",
     "postinstall": "electron-builder install-app-deps"
   },
   "devDependencies": {
@@ -52,5 +55,7 @@
     "electron-builder": "^19.56.2",
     "electron-prebuilt": "^1.4.13"
   },
-  "dependencies": {}
+  "dependencies": {
+    "electron-updater": "^2.21.4"
+  }
 }

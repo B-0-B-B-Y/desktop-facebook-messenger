@@ -1,0 +1,9 @@
+version: 1.0.2
+files:
+  - url: desktop-facebook-messenger-1.0.2-x86_64.AppImage
+    sha512: 6Fyy1SM8sakNJyA+r6UycYT5cUvb/St3e47RJizVVsar9iMa7cnaYl+TCsOYdvFpg0f1PdPqgBF95aMb7DdHng==
+    size: 48069754
+    blockMapSize: 50622
+path: desktop-facebook-messenger-1.0.2-x86_64.AppImage
+sha512: 6Fyy1SM8sakNJyA+r6UycYT5cUvb/St3e47RJizVVsar9iMa7cnaYl+TCsOYdvFpg0f1PdPqgBF95aMb7DdHng==
+releaseDate: '2018-03-27T23:40:27.896Z'
