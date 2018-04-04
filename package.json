@@ -25,6 +25,7 @@
   "build": {
     "appId": "desktop.facebook.messenger",
     "productName": "Messenger Desktop",
+    "publish": "github",
     "mac": {
       "category": "Network",
       "icon": "app/build/icon.icns"
